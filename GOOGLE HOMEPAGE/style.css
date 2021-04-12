@@ -1,0 +1,453 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+  }
+  
+  body {
+    font-size: 14px;
+    font-family:sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+/*Navbar Section*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+    margin-top: 15px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    padding-right: 2em;
+}
+/*Targets all the a tags to have the underline effect, both in the navbar and footer section*/
+a:hover{
+    text-decoration: underline;
+}
+.Sign_in a{
+    background-color: #4683ea;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    color:white;
+    margin-left: 7px;
+    border-radius: 0.3em;  
+    font-weight: bold;
+}
+nav img{
+    height: 15px;
+    padding-right: 2em;
+    margin: auto 7px;
+    cursor: pointer;
+}
+
+/*Main Section*/
+main{
+    width:50%;
+    margin:6.9em auto;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+main img{
+    width:50%;
+}
+
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper .search-input {
+  border: 1px solid #ddd;
+  color:gray;
+  font-size: 12px;
+  padding: 1em;
+  padding-left: 3em;
+  padding-top: 1.2em;
+  border-radius: 30px;
+  width: 100%;
+  transition: box-shadow 100ms;
+  outline: none;
+}
+
+.wrapper .search-input:hover {
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px 2px gray;
+}
+
+.wrapper .search {
+  width: 20px;
+  opacity: 0.4;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.wrapper .voice {
+    width: 20px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+} 
+.btns_container{
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.btns_container button{
+    padding: 1em;
+    border: none;
+    padding-top:1em;
+
+}
+.btns_container p{
+    border: none;
+    padding-top:1em; 
+}
+
+
+.btns_container a{
+    padding: 1em;
+    color: blue;
+}
+
+/*Footer Section*/
+
+footer{
+    background-color: rgb(240, 236, 236);
+}
+
+.footer_top{
+    padding:1em;
+}
+.footer_bottom{
+    padding:1em;
+    display: flex;
+    text-decoration:none;
+    justify-content: space-between;
+    border-top: 1px solid gray
+}
+
+.left a{
+    margin-right: 1em;
+    text-decoration:none;
+    color: rgb(90, 88, 88);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+.right a{
+    margin-right: 1em;
+    text-decoration:none;
+    color: rgb(90, 88, 88);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width: 375px) {
+    nav a{
+        display: flex;
+        flex-wrap: wrap;
+        color: black;
+        text-decoration: none;
+        padding-right: 1em;
+        font-size: 12px;
+    }
+
+    .Sign_in a{
+ 
+        background-color: #4683ea;
+        padding-right: 1em;
+        padding-left: 0.5em;
+        color:white;
+        border: none;  
+        text-align: center;
+        font-weight: bold;
+        height: 30px;
+        width: 65px;
+    }
+    .wrapper .search-input {
+        border: 1px solid #ddd;
+        color:gray;
+        font-size: 7px;
+        padding: 1em;
+        padding-left: 4em;
+        padding-top: 1.2em;
+        border-radius: 30px;
+        width: 100%;
+        transition: box-shadow 100ms;
+        outline: none;
+    }
+
+    .wrapper .search {
+        width: 12px;
+        opacity: 0.4;
+        position: absolute;
+        top: 7px;
+        left: 12px;
+    }
+    .wrapper .voice {
+        width: 12px;
+        position: absolute;
+        top: 7px;
+        right: 12px;
+    } 
+    .btns_container{
+        margin-top: 1em;
+        cursor: pointer;
+    }
+    .btns_container button{
+        padding: 1em;
+        border: none;
+        font-size: 7px;
+    
+    }
+    .btns_container p{
+        border: none;
+        padding-top:2em; 
+        font-size: 10px;
+    }
+    
+    
+    .btns_container a{
+        display: flex;
+       flex-direction: column;
+        padding: 1em;
+        color: blue;
+        font-size: 10px;
+    }
+    .footer_bottom{
+        padding:1.5em;
+        display: flex;
+        flex-direction: column;
+        text-decoration:none;
+        justify-content: space-between;
+        border-top: 1px solid gray;
+        font-size: 10px;
+    }
+    
+    .left a{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1em;
+        text-decoration:none;
+        color: rgb(90, 88, 88);
+    }
+    .right a{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1em;
+        text-decoration:none;
+        color: rgb(90, 88, 88);
+    }
+
+}
+
+
+@media (max-width: 411px) {
+    nav a{
+        display: flex;
+        flex-wrap: wrap;
+        color: black;
+        text-decoration: none;
+        padding-right: 1em;
+        font-size: 12px;
+    }
+
+    .Sign_in a{
+ 
+        background-color: #4683ea;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        color:white;
+        border: none;  
+        text-align: center;
+        font-weight: bold;
+    }
+    .wrapper .search-input {
+        border: 1px solid #ddd;
+        color:gray;
+        font-size: 5px;
+        padding: 1em;
+        padding-left: 4em;
+        padding-top: 1.2em;
+        border-radius: 30px;
+        width: 100%;
+        transition: box-shadow 100ms;
+        outline: none;
+    }
+
+    .wrapper .search {
+        width: 10px;
+        opacity: 0.4;
+        position: absolute;
+        top: 7px;
+        left: 12px;
+    }
+    .wrapper .voice {
+        width: 10px;
+        position: absolute;
+        top: 7px;
+        right: 12px;
+    } 
+    .btns_container{
+        margin-top: 1em;
+        cursor: pointer;
+    }
+    .btns_container button{
+        padding: 1em;
+        border: none;
+        font-size: 7px;
+    
+    }
+    .btns_container p{
+        border: none;
+        padding-top:2em; 
+        font-size: 10px;
+    }
+    
+    
+    .btns_container a{
+        display: flex;
+       flex-direction: column;
+        padding: 1em;
+        color: blue;
+        font-size: 10px;
+    }
+    .footer_bottom{
+        padding:1.5em;
+        display: flex;
+        flex-direction: column;
+        text-decoration:none;
+        justify-content: space-between;
+        border-top: 1px solid gray;
+        font-size: 10px;
+    }
+    
+    .left a{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1em;
+        text-decoration:none;
+        color: rgb(90, 88, 88);
+    }
+    .right a{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1em;
+        text-decoration:none;
+        color: rgb(90, 88, 88);
+    }
+
+}
+
+
+@media (max-width: px) {
+    nav a{
+        display: flex;
+        flex-wrap: wrap;
+        color: black;
+        text-decoration: none;
+        padding-right: 1em;
+        font-size: 12px;
+    }
+
+    .Sign_in a{
+ 
+        background-color: #4683ea;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        color:white;
+        border: none;  
+        text-align: center;
+        font-weight: bold;
+    }
+    .wrapper .search-input {
+        border: 1px solid #ddd;
+        color:gray;
+        font-size: 5px;
+        padding: 1em;
+        padding-left: 4em;
+        padding-top: 1.2em;
+        border-radius: 30px;
+        width: 100%;
+        transition: box-shadow 100ms;
+        outline: none;
+    }
+
+    .wrapper .search {
+        width: 10px;
+        opacity: 0.4;
+        position: absolute;
+        top: 7px;
+        left: 12px;
+    }
+    .wrapper .voice {
+        width: 10px;
+        position: absolute;
+        top: 7px;
+        right: 12px;
+    } 
+    .btns_container{
+        margin-top: 1em;
+        cursor: pointer;
+    }
+    .btns_container button{
+        padding: 1em;
+        border: none;
+        font-size: 7px;
+    
+    }
+    .btns_container p{
+        border: none;
+        padding-top:2em; 
+        font-size: 10px;
+    }
+    
+    
+    .btns_container a{
+        display: flex;
+       flex-direction: column;
+        padding: 1em;
+        color: blue;
+        font-size: 10px;
+    }
+    .footer_bottom{
+        padding:1.5em;
+        display: flex;
+        flex-direction: column;
+        text-decoration:none;
+        justify-content: space-between;
+        border-top: 1px solid gray;
+        font-size: 10px;
+    }
+    
+    .left a{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1em;
+        text-decoration:none;
+        color: rgb(90, 88, 88);
+    }
+    .right a{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1em;
+        text-decoration:none;
+        color: rgb(90, 88, 88);
+    }
+
+}
